@@ -17,7 +17,73 @@ display: block ruby;
 .navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark img{
     height: 120px;
 }
+.carousel-caption.text-right img{
 
-.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark{
-
+    width: 90%;
+    margin-bottom: 30px;
 }
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.container.marketing h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.featurette-heading{
+    margin-top: 1rem;
+    font-size: 200%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.block-news {
+    background-color: #e0e1e1;
+    border-radius: 20px;
+}
+.block-news img{
+    border-radius: 20px;
+}
+
+.block-news svg {
+    border-radius: 20px 0px 0px 20px;
+}
+
+
+
+.col-lg-8.espace-news hr.featurette-divider{
+    margin: 2.5rem;
+}
+
+.block-twitter {
+    background-color: #e0e1e1;
+    border-radius: 20px;
+}
+.block-twitter p.lead {
+    font-size: 0.7rem;
+}
+
+.block-twitter h4.featurette-heading {
+    font-size: 1rem;
+}
+
+.block-twitter i {
+    margin: 30px;
+}
+
+.espace-twitter hr.featurette-divider{
+    margin: 1rem;
+}
+
