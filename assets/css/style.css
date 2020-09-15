@@ -4,3 +4,20 @@
 .navbar{
     height: 100px;
 }
+
+ul.navbar-nav{
+text-align: center;
+width: 100%;
+display: block ruby;
+}
+
+.nav-link i{
+    color: white;
+}
+.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark img{
+    height: 120px;
+}
+
+.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark{
+
+}
