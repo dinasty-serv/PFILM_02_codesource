@@ -101,7 +101,7 @@ footer .col-md-4{
 }
 .copy {
     text-align: center;
-    
+    margin: revert;
 }
 
 .col-lg-4 .card{
@@ -129,4 +129,8 @@ footer .col-md-4{
 .action-projection button {
 
 
+}
+
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+    color: #fff;
 }
