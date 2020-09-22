@@ -1,8 +1,11 @@
 /*  STYLES
 -------------------------------------------------- */
 
-.navbar{
-    height: 100px;
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 98px;
 }
 
 ul.navbar-nav{
@@ -126,10 +129,47 @@ footer .col-md-4{
     margin: 40px;
 }
 
-.action-projection button {
-
-
+.socialbutton{
+    float: right;
+    width: 250px;
 }
+
+.socialbutton a.nav-link{
+    float: left;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .socialbutton {
+        display: none;
+    }
+
+    footer .container #bureau{
+        display: none;
+    }
+
+    footer .container #mobile{
+        display: block;
+    }
+
+
+
+
+  }
+
+  @media screen and (min-width: 768px) {
+  
+
+    footer .container #mobile{
+        display: none;
+    }
+
+
+
+
+  }
+  
+
+
 
 .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
     color: #fff;

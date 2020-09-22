@@ -36,46 +36,48 @@
   </head>
   <body>
     <header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 
-    <a class="navbar-brand" href="#"><img src="assets/img/logo.png"> </img> </a>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-
-        <li class="nav-item ">
-          <a class="nav-link" href="index.html">Accueil</a>
-        </li>
-
-        <li class="nav-item active">
-          <a class="nav-link" href="projections.html">Projections <span class="sr-only">(current)</span> </a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="#">News</a>
-          </li>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="#">A propos</a>
-          </li>
-          
-      </ul>
-
-      <a class="nav-link" title="Retrouvez-nous sur Facebook" href="#"><i class="fa fa-facebook fa-2x"></i></a>
-      <a class="nav-link" title="Retrouvez-nous sur Twitter" href="#"><i class="fa fa-twitter fa-2x"></i></a>
-      <a class="nav-link" title="Retrouvez-nous sur Youtube" href="#"><i class="fa fa-youtube fa-2x"></i></a>
-
-
-      
-    </div>
-
+        <a class="navbar-brand" href="#">
     
-  </nav>
+          <img src="assets/img/logo.png" height="30" class="d-inline-block align-top"/>
+        
+        </a>
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="projections.html">Projections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+              </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">A propos</a>
+              </li>
+          </ul>
+        </div>
+    
+          <div class="socialbutton">
+    
+          <a class="nav-link" title="Retrouvez-nous sur Facebook" href="#"><i class="fa fa-facebook fa-2x"></i></a>
+          <a class="nav-link" title="Retrouvez-nous sur Twitter" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+          <a class="nav-link" title="Retrouvez-nous sur Youtube" href="#"><i class="fa fa-youtube fa-2x"></i></a>
+    
+         </div>
+          
+        
+    
+        
+      </nav>
 </header>
 <main role="main">
   <hr class="featurette-divider">
@@ -87,7 +89,8 @@
   <hr class="featurette-divider" style="margin-bottom: 30px;">
   
   <div class="action-projection">
-    <p><i class="fa fa-calendar"></i> Le 02/01/2021 à 20h00</p> <button class="btn btn-primary">Réserver</button>
+    <p><i class="fa fa-calendar"></i> Le 02/01/2021 à 20h00</p> 
+    <a href="#" class="btn btn-primary" data-toggle="modal" data-title="85 Minutes" data-date="02/01/2021 à 20h00" data-target="#modalreservation">Réserver</a>
   </div>
 <div class="container">
  
@@ -105,7 +108,55 @@
   </div>
 
   </div>
-</div>
+
+  <div class="modal fade" id="modalreservation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Réserver vos places pour la diffution de</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="" method="post" id="reservation">
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Nom</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Votre nom">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Prénom</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Votre prénom">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Nombre(s) de place(s)</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          <button type="submit" class="btn btn-primary">Réserver</button>
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
+</div><!-- /.container -->
+
+
+
+
 
 </div>
     
@@ -114,42 +165,65 @@
 
 
 <footer>
-    <div class="container">
-  
-      <div class="row">
-  
-        <div class="col-md-4">
+  <div class="container">
+    <div class="row" id="mobile">
+
+     
+        <div class="col-12">
+    <div class="socialbutton">
+
+      <a class="nav-link" title="Retrouvez-nous sur Facebook" href="#"><i class="fa fa-facebook fa-2x"></i></a>
+      <a class="nav-link" title="Retrouvez-nous sur Twitter" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+      <a class="nav-link" title="Retrouvez-nous sur Youtube" href="#"><i class="fa fa-youtube fa-2x"></i></a>
+
+     </div>
+    </div>
+     </div>
+   
+    <div class="row" id="bureau" >
+
+      <div class="col-md-4">
+        <h4>Films de plein air</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempora, aspernatur qui necessitatibus illo, et sapiente cupiditate eaque iste pariatur libero deserunt. Harum sint nihil eaque! Dolorem minima nostrum tempore.</p>
+      </div>
+
+      <div class="col-md-4">
+         <h4>Liens utiles</h4>
+         <ul>
+          <li><a href="#">Mention légale</a></li>
+          <li><a href="#">Lien 2</a></li>
+          <li><a href="#">Lien 3</a></li>
+          <li><a href="#">Lien 4</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+       
           <h4>Films de plein air</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempora, aspernatur qui necessitatibus illo, et sapiente cupiditate eaque iste pariatur libero deserunt. Harum sint nihil eaque! Dolorem minima nostrum tempore.</p>
-        </div>
-  
-        <div class="col-md-4">
-           <h4>Liens utiles</h4>
-           <ul>
-            <li><a href="#">Mention légale</a></li>
-            <li><a href="#">Lien 2</a></li>
-            <li><a href="#">Lien 3</a></li>
-            <li><a href="#">Lien 4</a></li>
-          </ul>
-        </div>
-  
-        <div class="col-md-4">
-         
-            <h4>Films de plein air</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempora, aspernatur qui necessitatibus illo, et sapiente cupiditate eaque iste pariatur libero deserunt. Harum sint nihil eaque! Dolorem minima nostrum tempore.</p>
-          
-         
-        </div>
+        
+       
       </div>
+    </div>
+
   
-    
-  
-    <p class="float-right"><a href="#">Back to top</a></p>
-    <p class="copy">&copy; 2017-2020 Films de plein air</p>
-  </div>
-  </footer>
+
+  <p class="float-right"><a href="#">Back to top</a></p>
+  <p class="copy">&copy; 2017-2020 Films de plein air</p>
+</div>
+</footer>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
         <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+          $( ".action-projection a" ).click(function() {
+    
+           console.log($(this).data('title'));
+    
+           $('#exampleModalLabel').html('Réserver vos places pour la diffusion de '+$(this).data('title')+' Le '+$(this).data('date'))
+            
+        });
+        </script>
   </html>
   

@@ -38,7 +38,11 @@
     <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 
-    <a class="navbar-brand" href="#"><img src="assets/img/logo.png"> </img> </a>
+    <a class="navbar-brand" href="#">
+
+      <img src="assets/img/logo.png" height="30" class="d-inline-block align-top"/>
+    
+    </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -47,27 +51,30 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="projections.html">Projections</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">News</a>
+          <a class="nav-link" href="news.html">News</a>
           </li>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#">A propos</a>
           </li>
       </ul>
+    </div>
+
+      <div class="socialbutton">
 
       <a class="nav-link" title="Retrouvez-nous sur Facebook" href="#"><i class="fa fa-facebook fa-2x"></i></a>
       <a class="nav-link" title="Retrouvez-nous sur Twitter" href="#"><i class="fa fa-twitter fa-2x"></i></a>
       <a class="nav-link" title="Retrouvez-nous sur Youtube" href="#"><i class="fa fa-youtube fa-2x"></i></a>
 
-
+     </div>
       
-    </div>
+    
 
     
   </nav>
@@ -91,20 +98,19 @@
         
         <div class="container">
           <div class="row">
-      <div class="col-6 col-lg-8  col-md-8">
+      <div class="col-6 col-lg-8  col-md-6">
         <div class="carousel-caption text-left">
             <h1>IO</h1> 
             <h3><i class="fa fa-calendar"></i> 01/01/2021 à 20h00</h3>
            
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at maximus dui, sit amet pulvinar est. Cras mollis quam non ante aliquam, ac porta magna mollis. Curabitur non dolor sit amet urna eleifend vulputate. Suspendisse sed pellentesque odio. Proin efficitur eros vel eleifend lobortis. Vestibulum imperdiet erat id velit ornare, vel molestie risus elementum. In nec ultricies justo, eu consectetur magna. Mauris in arcu enim. 
-
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at maximus dui, sit amet pulvinar est. Cras mollis quam non ante aliquam, ac porta magna mollis. Curabitur non dolor sit amet urna eleifend vulputate. Suspendisse sed pellentesque odio. Proin efficitur eros vel eleifend lobortis. 
             </p>
             
             <p><a class="btn btn btn-primary" href="postProjection.html" role="button">Lire le résumer</a></p>
           </div>
         </div>
-        <div class="col-6 col-lg-4 col-md-4">
+        <div class="col-6 col-lg-4 col-md-6">
           <div class="carousel-caption text-right">
             
             <img src="assets/img/affiche01.jpg">
@@ -125,7 +131,7 @@
             <h3><i class="fa fa-calendar"></i> 01/01/2021 à 22h50</h3>
            
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at maximus dui, sit amet pulvinar est. Cras mollis quam non ante aliquam, ac porta magna mollis. Curabitur non dolor sit amet urna eleifend vulputate. Suspendisse sed pellentesque odio. Proin efficitur eros vel eleifend lobortis. Vestibulum imperdiet erat id velit ornare, vel molestie risus elementum. In nec ultricies justo, eu consectetur magna. Mauris in arcu enim. 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at maximus dui, sit amet pulvinar est. Cras mollis quam non ante aliquam, ac porta magna mollis. Curabitur non dolor sit amet urna eleifend vulputate. Suspendisse sed pellentesque odio. Proin efficitur eros vel eleifend lobortis. 
 
             </p>
             
@@ -151,7 +157,7 @@
             <h3><i class="fa fa-calendar"></i> 02/01/2021 à 20h00</h3>
            
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at maximus dui, sit amet pulvinar est. Cras mollis quam non ante aliquam, ac porta magna mollis. Curabitur non dolor sit amet urna eleifend vulputate. Suspendisse sed pellentesque odio. Proin efficitur eros vel eleifend lobortis. Vestibulum imperdiet erat id velit ornare, vel molestie risus elementum. In nec ultricies justo, eu consectetur magna. Mauris in arcu enim. 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at maximus dui, sit amet pulvinar est. Cras mollis quam non ante aliquam, ac porta magna mollis. Curabitur non dolor sit amet urna eleifend vulputate. Suspendisse sed pellentesque odio. Proin efficitur eros vel eleifend lobortis.
 
             </p>
             
@@ -192,7 +198,8 @@
             <h5 class="card-title">IO</h5>
             <p><i class="fa fa-calendar"></i> Diffusion le 01/01/2021 à 20h00</p>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="postProjection.html" class="btn btn-primary">Lire la suite</a> <a href="#" class="btn btn-primary">Réserver</a>
+            <a href="postProjection.html" class="btn btn-primary">Lire la suite</a> 
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-title="IO" data-date="01/01/2021 à 20h00" data-target="#modalreservation">Réserver</a>
 
           </div>
         </div>
@@ -205,7 +212,8 @@
             <h5 class="card-title">1917</h5>
             <p><i class="fa fa-calendar"></i> Diffusion le 01/01/2021 à 22h50</p>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="postProjection.html" class="btn btn-primary">Lire la suite</a> <a href="#" class="btn btn-primary">Réserver</a>
+            <a href="postProjection.html" class="btn btn-primary">Lire la suite</a> 
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-title="1917" data-date="01/01/2021 à 22h50" data-target="#modalreservation">Réserver</a>
 
           </div>
         </div>
@@ -218,7 +226,9 @@
             <h5 class="card-title">85 Minutes</h5>
             <p><i class="fa fa-calendar"></i> Diffusion le 02/01/2021 à 20h00</p>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="postProjection.html" class="btn btn-primary">Lire la suite</a> <a href="#" class="btn btn-primary">Réserver</a>
+            <a href="postProjection.html" class="btn btn-primary">Lire la suite</a> 
+            
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-title="85 Minutes" data-date="02/01/2021 à 20h00" data-target="#modalreservation">Réserver</a>
           </div>
         </div>
       </div>
@@ -242,7 +252,7 @@
             <h4 class="featurette-heading">Autorisation de diffusion</span></h4>
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           <span class="text-left">           
-             <a href="#" class="btn btn-primary">Lire la suite</a>
+             <a href="postNews.html" class="btn btn-primary">Lire la suite</a>
           </span>
           </div>
           <div class="col-lg-6 order-md-1">
@@ -258,7 +268,7 @@
               <h4 class="featurette-heading">Autorisation de diffusion</span></h4>
               <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
             <span class="text-left">           
-               <a href="#" class="btn btn-primary">Lire la suite</a>
+               <a href="postNews.html" class="btn btn-primary">Lire la suite</a>
             </span>
             </div>
             <div class="col-lg-6 order-md-1">
@@ -274,7 +284,7 @@
               <h4 class="featurette-heading">Autorisation de diffusion</span></h4>
               <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
             <span class="text-left">           
-               <a href="#" class="btn btn-primary">Lire la suite</a>
+               <a href="postNews.html" class="btn btn-primary">Lire la suite</a>
             </span>
             </div>
             <div class="col-lg-6 order-md-1">
@@ -424,7 +434,49 @@
     </div>
 
     <!-- /END THE FEATURETTES -->
-
+    <div class="modal fade" id="modalreservation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Réserver vos places pour la diffution de</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="" method="post" id="reservation">
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Nom</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Votre nom">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Prénom</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Votre prénom">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Nombre(s) de place(s)</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+            <button type="submit" class="btn btn-primary">Réserver</button>
+          </div>
+        </div>
+      </form>
+      </div>
+    </div>
   </div><!-- /.container -->
 
 
@@ -433,8 +485,21 @@
 </main>
 <footer>
   <div class="container">
+    <div class="row" id="mobile">
 
-    <div class="row">
+     
+        <div class="col-12">
+    <div class="socialbutton">
+
+      <a class="nav-link" title="Retrouvez-nous sur Facebook" href="#"><i class="fa fa-facebook fa-2x"></i></a>
+      <a class="nav-link" title="Retrouvez-nous sur Twitter" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+      <a class="nav-link" title="Retrouvez-nous sur Youtube" href="#"><i class="fa fa-youtube fa-2x"></i></a>
+
+     </div>
+    </div>
+     </div>
+   
+    <div class="row" id="bureau" >
 
       <div class="col-md-4">
         <h4>Films de plein air</h4>
@@ -469,4 +534,14 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
       <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script>
+        $( ".card-body a" ).click(function() {
+
+         console.log($(this).data('title'));
+
+         $('#exampleModalLabel').html('Réserver vos places pour la diffusion de '+$(this).data('title')+' Le '+$(this).data('date'))
+          
+      });
+      </script>
 </html>
