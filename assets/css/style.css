@@ -5,13 +5,14 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    margin-top: 98px;
+    margin-top: auto;
 }
 
-ul.navbar-nav{
-text-align: center;
-width: 100%;
-display: block ruby;
+ul.navbar-nav {
+    
+    width: 100%;
+   
+    justify-content: center;
 }
 
 .nav-link i{
@@ -123,7 +124,9 @@ footer .col-md-4{
     background-color: #d2d2d2;
     text-align: center;
     margin-bottom: 20px;
-    display: block ruby;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .action-projection p {
     margin: 40px;
@@ -167,7 +170,14 @@ footer .col-md-4{
 
 
   }
-  
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    max-height: 115px;
+}
 
 
 
