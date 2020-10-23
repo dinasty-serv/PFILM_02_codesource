@@ -20,6 +20,7 @@ ul.navbar-nav {
 }
 .navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark img{
     height: 120px;
+    margin-top: -25px;
 }
 .carousel-caption.text-right img{
 
@@ -27,17 +28,19 @@ ul.navbar-nav {
     margin-bottom: 30px;
 }
 .carousel-caption {
-    position: absolute;
     right: 15%;
-    bottom: 20px;
     left: 15%;
-    z-index: 10;
     padding-top: 20px;
     padding-bottom: 15px;
     color: #fff;
-    text-align: center;
 }
 
+.carousel-caption p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
 .container.marketing h2{
     text-align: center;
     margin-bottom: 30px;
@@ -142,6 +145,25 @@ footer .col-md-4{
 }
 
 @media screen and (max-width: 768px) {
+
+    .carousel-caption p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+    }
+
+
+.navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #5a5a5a;
+    
+}
     .navbar .socialbutton {
         display: none;
     }
@@ -154,7 +176,11 @@ footer .col-md-4{
         display: block;
     }
 
+    .carousel-caption.text-left h1{font-size: 2rem;}
 
+    .carousel-caption.text-left h3{
+        font-size: 1.4rem;
+    }
 
 
   }
@@ -165,6 +191,8 @@ footer .col-md-4{
     footer .container #mobile{
         display: none;
     }
+
+
 
 
 
